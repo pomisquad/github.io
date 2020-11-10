@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Maya</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/pagestyle.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section id="gallery">
+    <div class="container">
+      <nav>
+        <a href="./index.html">Home</a>
+      </nav>
+      <h1 class="heading">Maya</h1>
+        <div id="image-gallery">
+          <script>
+            const wrapper = document.getElementById('image-gallery');
+            let myHtml = '';
+            for(var i =1; i < 7; i++) {
+              myHtml += `<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+              <div class="img-wrapper">
+                <a href="./images/maya/Maya${i}.jpg"><img src="./images/maya/Maya${i}.jpg" class="img-responsive"></a>
+                <div class="img-overlay">
+                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>`
+            }
+            for(var i =1; i < 4; i++) {
+              myHtml += `<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+              <div class="img-wrapper">
+                <a href="./images/squad${i}.jpg"><img src="./images/squad${i}.jpg" class="img-responsive"></a>
+                <div class="img-overlay">
+                  <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>`
+            }
+            wrapper.innerHTML = myHtml;
+          </script>
+      </div><!-- End image gallery -->
+    </div><!-- End container -->
+  </section>
+  <footer>
+    <script src="./jquery.js"></script>
+    <script src="./main.js"></script>
+  </footer>
+
+</body>
+
+</html>
